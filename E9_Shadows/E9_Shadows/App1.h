@@ -18,11 +18,13 @@ public:
 
 	bool frame();
 
+
 protected:
 	bool render();
 	void depthPass();
 	void finalPass();
 	void gui();
+
 
 private:
 	TextureShader* textureShader;
@@ -30,10 +32,15 @@ private:
 
 	Light* light;
 	AModel* model;
+	CubeMesh* cube;
 	ShadowShader* shadowShader;
 	DepthShader* depthShader;
 
 	ShadowMap* shadowMap;
+
+	float cubeX;
+	float lightPosX, lightPosY, lightPosZ;
+
 };
 
 #endif

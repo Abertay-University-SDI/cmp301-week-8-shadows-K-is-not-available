@@ -66,6 +66,9 @@ float2 getProjectiveCoords(float4 lightViewPosition)
 float4 main(InputType input) : SV_TARGET
 {
     float shadowMapBias = 0.005f;
+
+    // Shadow acne
+    // float shadowMapBias = 0.0f;
     float4 colour = float4(0.f, 0.f, 0.f, 1.f);
     float4 textureColour = shaderTexture.Sample(diffuseSampler, input.tex);
 
