@@ -33,13 +33,14 @@ private:
 	Light* light;
 	AModel* model;
 	CubeMesh* cube;
+	CubeMesh* lightCube;
 	ShadowShader* shadowShader;
 	DepthShader* depthShader;
 
 	ShadowMap* shadowMap;
 
 	float cubeX;
-	float lightPosX, lightPosY, lightPosZ;
+	float lightPosX, lightPosY, lightPosZ, lightDirX, lightDirZ;
 
 };
 
